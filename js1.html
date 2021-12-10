@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>convert</title>
+
+<meta char set="utf-8">
+</head>
+<script>
+function add()
+{
+
+    fnum=parseInt(document.getElementById("fnum").value);
+  snum=parseInt(document.getElementById("snum").value);
+    add=fnum+snum;
+  document.getElementById("sum").value=add;
+}
+function sub()
+{
+
+    fnum=parseInt(document.getElementById("fnum").value);
+  snum=parseInt(document.getElementById("snum").value);
+    add=fnum-snum;
+  document.getElementById("sum").value=add;
+}
+
+</script>
+<form>
+<input type="number"id="first">first<br>
+
+<input type="number" id="second">second<br>
+<button onclick="add()" value="sum">add</button>
+<button onclick="substract()">sub</button>
+<input type="text" id="sum">
+
+</form>
+</body>
+</html>

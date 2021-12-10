@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>convert</title>
+
+<meta char set="utf-8">
+</head>
+<script>
+function convert()
+{
+
+    d=parseInt(document.getElementById("dollar").value);
+    r=d/74;
+  snum=parseInt(document.getElementById("rupees").value=r);
+  document.getElementById("sum").value=add;
+}
+</script>
+</head>
+<body>
+<p>Dollar:<input id="dollar"></p>
+<p>Rupees:<input id="rupees"></p>
+<button onclick="convert()">convert</button>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    .row{
+        width:50%;
+    }
+</style>
+<body>
+    <div class="row">
+    <div class="content" id="content">
+        <img src="E:\mcakc105\flower1.jpg"id="img1"><br><br>
+        <div claa="data">
+            <h1 id="heading1">hover mouse here</h1>
+            <h2 id="heading2">hai hellow world</h2>
+         </div>
+      </div>
+  </div>
+
+
+  <script>
+      document.getElementById("content").addEventListener("mouseover",change1);
+      document.getElementById("content").addEventListener("mouseout",change2);
+      function change1()
+             {
+                 document.getElementById("img1").src="E:\mcakc105\flower2.jpg"id="img2";
+                 document.getElementById("heading1").style.display="none";
+                 document.getElementById("heading2").style.display="block";
+
+             }
+     function change2()
+            {
+             document.getElementById("img2").src="E:\mcakc105\flower1.jpg";
+             document.getElementById("heading1").style.display="block";
+                 document.getElementById("heading2").style.display="none";
+
+             
+
+            }
+        </script>
+
+</body>
+</html>
+

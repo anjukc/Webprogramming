@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>Entryform</title>
+<meta char set="utf-8">
+<body>
+<link rel="stylesheet" href="entry.css">
+<script>
+  function check()
+   {
+      var name=document.myform.fname.value
+      var email=document.myform.email.value
+      var password=document.myform.password.value;
+  if(name=="")
+   {
+    alert("enter a valid name");
+    document.form.fname.focus();
+    console.log("name");
+    return false;
+   }
+   if(email=="")
+    {
+      alert("enter a valid MOB NUMBER");
+      document.myform.email.focus();
+    }
+  else if(mob.lenght!=10)
+  {
+  alert("enter a 10 digit mobile number") 
+  document.form.mob.focus(); 
+  return false;
+   }
+  }
+</script>
+</head>
+<body>
+ <form name="myform">
+    <table align="center">
+    <h1 align="center">Entry Form</h1>
+  <div>
+   <tr> <td>
+      Enter your Name:
+      </td>
+    <td>
+      <input type="text"name="fname"id="fname">
+    </td>
+    </tr>
+  <tr>
+    <td>Age</td><td>
+        <input type="area"></td></tr>
+  <tr>
+    <td>Dob</td>
+    <td><input type="data"></td></tr>
+   <tr> 
+    <td>Address</td>
+    <td><input type="text area" place holder="data"></td></tr>
+  <tr>
+    
+   <tr>
+    <td>MOb No</td>
+    <td><input type="text area" name="mob" place holder="data"></td>
+  </tr>
+  <tr>
+    <td>Email id</td>
+    <td><input type="text area" name="email"place holder="data"></td>
+</tr>
+<tr>
+    <td>password</td>
+    <td><input type="password"name="password" place holder="data"></td>
+</tr>
+
+<tr><td><input type="reset" value="reset"></td>
+<td><input type="button" value="submit" onclick="check()"></tr>
+</table>
+</form>
+ </body>
+</html>
